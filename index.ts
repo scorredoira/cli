@@ -306,7 +306,7 @@ export class Parser {
      * const input = parser.flag("input")  // Returns provided value or "stdin"
      * ```
      */
-    flag(name: string): string | string[] | undefined {
+    flag(name: string): string | undefined {
         this.parse()
 
         const flag = this._flags.first(t => t.name == name)
